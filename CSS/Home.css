@@ -1,0 +1,248 @@
+body {
+  margin: 0px;
+  background-color: rgb(232, 229, 229);
+  height: fit-content;
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+
+}
+* {
+  text-decoration: none;
+}
+:root {
+  --body-: #f0eeee;
+  --card-color: #FFFFFF;
+  --text-black: #313131;
+  --decor: #dc1ac9;
+}
+section {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+}
+.header {
+  background-color: rgb(21, 19, 19);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+}
+.left-h {
+  display: flex;
+  align-items: center;
+}
+.right-h {
+  display: flex;
+  align-items: center;
+}
+.header a {
+  padding: 0px;
+  font-size: 30px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.header a>span {
+  color: var(--decor);
+}
+.scroll {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #dc1ac9;
+  padding: 10px 0px;
+  color: white;
+}
+.sidebar {
+  position: absolute;
+  left: 0;
+  width: 250px;
+  top: 0;
+  bottom: 0;
+  background-color: #525252;
+  height: 100vh;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+.welcome {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+.close-sidebar {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-black);
+}
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  font-size: 10px;
+  box-sizing: border-box;
+  height: fit-content;
+  padding-bottom: 20px;
+  margin-top: 0px;
+}
+.sidebar-nav {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 25px;
+  padding: 10px 0px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.sidebar-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.15s all ease-in-out;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  padding: 10px 0px;
+  border-bottom: 1px solid grey;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sidebar-nav a:hover {
+  color: orange;
+  letter-spacing: 2px;
+}
+.acc-btn {
+  padding: 10px 40px;
+  font-weight: bold;
+  background-color: #dc1ac9;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  height: fit-content;
+  width: 100%;
+}
+.main-body {
+  margin-top: 10px;
+  height: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 265px;
+  box-sizing: border-box;
+}
+.main-body h1 {
+  margin: 0px;
+}
+.select-options {
+  gap: 15px;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.select-options button {
+  border-radius: 20px;
+  padding: 8px 20px;
+  border: 1px solid rgb(33, 33, 33);
+  font-size: 13px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.15s all ease-in-out;
+}
+.select-options button:hover {
+  background-color: rgba(94, 94, 94, 0.2);
+}
+.body-content {
+  height: fit-content;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
+  gap: 15px;
+  justify-content: center;
+}
+.cards {
+  background-color: var(--card-color);
+  height: 230px;
+  border-radius: 20px;
+}
+.card1 {
+  background-color: rgb(51, 51, 131);
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.card1 h2 {
+  margin: 0px;
+  font-size: 18px;
+}
+.card1 button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #dc1ac9;
+  color: white;
+}
+.cards {
+  padding: 20px;
+  box-sizing: border-box;
+}
+.cards h3 {
+  margin: 0px;
+  font-size: 18px;
+}
+.cards button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #dc1ac9;
+  color: white;
+}
+
+.footer {
+  background-color: black;
+  height: fit-content;
+  color: white;
+  font-weight: bold;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+}
+.f-content {
+  font-size: 13px;
+}
+.pri {
+  font-size: 12px;
+}

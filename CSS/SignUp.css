@@ -1,0 +1,130 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(229, 229, 232);
+  margin: 0px;
+}
+:root {
+  --body-: #f0eeee;
+  --card-color: #FFFFFF;
+  --text-black: #313131;
+  --decor: #dc1ac9;
+}
+.signup-page {
+  display: flex;
+  width: 350px;
+  height: fit-content;
+  padding: 20px 0px;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px #babecc, -10px -10px 20px #ffffff;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  position: relative;
+}
+@media(max-width: 450px) {
+  .signup-page {
+    width: 85%;
+  }
+}
+.close-signup {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: red;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+.left-h {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.page-d {
+  padding: 0px;
+  font-size: 30px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.page-d span {
+  color: var(--decor)
+}
+.email-div {
+  width: 100%;
+  gap: 5px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.firstname-div {
+  width: 100%;
+  gap: 5px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+.password-div {
+  width: 100%;
+  gap: 5px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+.number-div {
+  width: 100%;
+  gap: 5px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+input {
+  width: 80%;
+  border-radius: 50px;
+  box-sizing: border-box;
+  border: none;
+}
+.input-text {
+  outline: 1px solid black;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-weight: 15px;
+  font-weight: bold;
+  color: var(--text-black);
+}
+.continue {
+  background-color: var(--decor);
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+}
+.p-inst {
+  font-weight: bold;
+  color: var(--text-black);
+}
+.create-a {
+  color: var(--decor);
+}
+.firstname-div {
+  display: none;
+}
